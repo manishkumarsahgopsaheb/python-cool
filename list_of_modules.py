@@ -214,7 +214,7 @@
 # ----------------JSON module------------convert from json to python, and the result will be the
 # dictionary------------------
 
-import json
+# import json
 
 # x = '{"name":"john", "age":30, "city":"New York"}'
 
@@ -248,7 +248,7 @@ import json
 #
 # RegEx can be used to check if a string contains the specified search pattern.
 
-import re
+# import re
 
 # txt = "the rain in spain"
 #
