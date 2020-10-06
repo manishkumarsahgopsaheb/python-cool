@@ -306,4 +306,89 @@ window = tk.Tk()
 #         label = tk.Label(master=frame, text=f"row {i}\ncolumn {j}")
 #         label.pack(padx=5, pady=5)
 
+
+# By default, widgets are centered in their grid cells. For example,
+# the following code creates two Label widgets and places them in a grid
+# with one column and two rows:
+
+# window.columnconfigure(0, minsize=250)
+# window.rowconfigure([0, 1], minsize=100)
+#
+# label1 = tk.Label(text="A")
+# label1.grid(row=0, column=0)
+#
+# label2 = tk.Label(text="B")
+# label2.grid(row=1, column=0)
+
+# You can change the location of each label inside of the grid cell using
+# the sticky parameter. sticky accepts a string containing one or more
+# of the following letters:
+#
+# "n" or "N" (north) to align to the top-center part of the cell
+# "e" or "E" (east) to align to the right-center side of the cell
+# "s" or "S" (south) to align to the bottom-center part of the cell
+# "w" or "W" (west) to align to the left-center side of the cell
+
+#            North
+#              |
+#              |
+#     West------------East
+#              |
+#              |
+#            South
+#
+
+# this will show the label A and B on the Top
+
+# window.columnconfigure(0, minsize=250)
+# window.rowconfigure([0, 1], minsize=100)
+#
+# label1 = tk.Label(text="A")
+# label1.grid(row=0, column=0, sticky="n")
+#
+# label2 = tk.Label(text="B")
+# label2.grid(row=1, column=0, sticky="n")
+
+# let me the label on the north-east and another one in south-west
+
+# window.columnconfigure(0, minsize=250)
+# window.rowconfigure([0, 1], minsize=100)
+# label1 = tk.Label(text="A")
+# label1.grid(row=0, column=0, sticky="ne")
+#
+# label2 = tk.Label(text="B")
+# label2.grid(row=1, column=0, sticky="sw")
+
+
+#                   another code
+
+
+# window.rowconfigure(0, minsize=50)
+# window.columnconfigure([0, 1, 2, 3], minsize=50)
+#
+# label1 = tk.Label(text="1", bg="black", fg="white")
+# label2 = tk.Label(text="2", bg="black", fg="white")
+# label3 = tk.Label(text="3", bg="black", fg="white")
+# label4 = tk.Label(text="4", bg="black", fg="white")
+#
+# label1.grid(row=0, column=0)
+# label2.grid(row=0, column=1, sticky="ew")
+# label3.grid(row=0, column=2, sticky="ns")
+# label4.grid(row=0, column=3, sticky="nsew")
+
+# comparison between .grid() and .pack()
+
+# in case of .grid() 
+#
+# sticky="ns"	
+# sticky="ew"
+# sticky="nsew"
+
+# in case of .pack()
+
+# fill=tk.Y
+# fill=tk.X
+# fill=tk.BOTH
+
 window.mainloop()
+
