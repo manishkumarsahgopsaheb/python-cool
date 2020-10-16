@@ -1,0 +1,29 @@
+all the time actually we dont need of installing xamp for creating a local server. why?
+
+the answer is simple, we can simply create a pyhton http server and its creation is more easy  and simple than installing xamp 
+or installing Aapache and Mysql
+
+why to create local server:
+    becase it is good to keep the file on server rather than in local memory
+    and after all we have to push our files on the server for hosting our website
+    and also reason is :
+          like if we will not create server then it may different browser treats different behaviour with our files
+
+step to creating python http server:
+
+1) just go in the folder where your all files is present related to your website
+2)click shift key and right mouse button together,
+              you will get the option like
+              ----- open powershell window here---------------,
+              click on this option and your window power shell will open here
+3)now type
+        python -m http.server --bind=localhost
+        
+        after this output will be like
+              Servering Http on 127.0.0.1 port 8000 (http://127.0.0.1:8000)....
+              
+4)or instead of typing the command in step 3, you can type this:
+      python -m http.server
+      
+5) go into the browser and type localhost:8000 and hit enter, you will get your server
+      
