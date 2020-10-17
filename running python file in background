@@ -1,0 +1,34 @@
+**************************run the  file in background!!*********************************
+
+just go in to the terminal and type the command 
+
+  pythonw.exe .\filename.py                 
+                                
+suppose my filename is main
+then
+i will run the command like
+                                
+  pythonw.exe .\main.py
+
+another way is:
+you can even type this command
+  pythonw .\filename.py
+
+
+so now your main.py file will run in the background even after closing the ide or prompt
+
+ 
+********************************Killing this process**************************
+
+now if you want to kill this process then open your Task Manager and find the file name as pyhton and delete it 
+
+
+*******************its use********************
+we can use this in those project where i want to run the process in background like
+
+drinkig water notification:
+ actually this project will remind me, after every decided or setted particular time for driking water
+
+                                
+       
+                                
